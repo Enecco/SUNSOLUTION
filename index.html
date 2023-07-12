@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mon site avec dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>Dashboard</h1>
-    <input type="color" id="background-color" value="#ffffff">
-    <button onclick="changeDynamicScreenBackground()">Modifier l'arrière-plan</button>
-
-    <script src="script.js"></script>
+  <h1>Dashboard</h1>
+  
+  <div class="logo-section">
+    <h2>Logo</h2>
+    <img id="logo-image" src="logo.jpg">
+    <!-- <input type="color" id="background-color" value="#ffffff">
+    <button onclick="changeDynamicScreenBackground()">Modifier l'arrière-plan</button> -->
+    <input type="file" id="logo-file" accept="image/*">
+    <button onclick="changeLogo()">Modifier le logo</button>
+  </div>
+  
+  <a href="dynamic_screen.html">Page dynamique</a>
 </body>
 </html>

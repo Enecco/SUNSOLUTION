@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Dynamic Screen</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Dynamic Screen</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
 </head>
-<body>
-    <h1>Dynamic Screen</h1>
-
-    <script src="script.js"></script>
+<body id="heading">
+  <h1>Bienvenue sur l'écran dynamique</h1>
+  
+  <div class="background-section">
+    <h2>Arrière-plan</h2>
+    <button onclick="changeBackground()">Changer l'arrière-plan</button>
+  </div>
+  
+  <div class="typography-section">
+    <h2>Typographie</h2>
+    <select id="font-select" onchange="changeFont()">
+      <option id="1" value="Arial">Arial</option>
+      <option id="2" value="Verdana">Verdana</option>
+      <option id="3" value="Times New Roman">Times New Roman</option>
+      <!-- Ajoutez les autres typographies de votre choix ici -->
+    </select>
+  </div>
+  
+  <div class="banner-section">
+    <h2>Bannière</h2>
+    <p id="date"></p>
+    <p id="time"></p>
+    <p id="location"></p>
+  </div>
+  
+  <script>
+    // Code JavaScript pour la fonctionnalité de la bannière
+    // Vous devrez ajouter le code pour récupérer les coordonnées GPS de l'utilisateur et mettre à jour les paragraphes
+  </script>
 </body>
 </html>
