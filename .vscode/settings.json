@@ -1,0 +1,5 @@
+{
+    "CodeGPT.query.language": "French",
+    "CodeGPT.model": "gpt-3.5-turbo",
+    "CodeGPT.apiKey": "OpenAI"
+}
